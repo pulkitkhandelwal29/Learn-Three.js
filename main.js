@@ -24,10 +24,23 @@ scene.add(cubeMesh)
 
 
 
-//initialize the camera (Field of View, aspect ratio, near, far)
-const camera = new THREE.PerspectiveCamera( 50,
-     window.innerWidth / window.innerHeight,
-     0.1, 30)
+// //initialize the camera (Field of View, aspect ratio, near, far)
+// const camera = new THREE.PerspectiveCamera( 50,
+//      window.innerWidth / window.innerHeight,
+//      0.1, 30)
+
+//setting the aspect ratio so that the object does not stretches itself
+const aspectRatio = window.innerWidth / innerHeight
+
+//setting Orthographic camera (left, right, top, bottom, near, far)
+const camera = new THREE.OrthographicCamera (
+    -1 * aspectRatio,
+    1 * aspectRatio,
+    1,
+    -1,
+    0.1,
+    200
+)
 
 //camera is positioned this units away
 camera.position.z = 5
