@@ -1,0 +1,5 @@
+/* to hide the margin from all sides and remove unnecessary scrolling */
+body{
+    margin:0;
+    overflow: hidden;
+}

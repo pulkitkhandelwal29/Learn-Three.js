@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Hello World!
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <!--Three js imported using CDN-->
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.165.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.165.0/examples/jsm/"
+              }
+            }
+          </script>
+         
+    </head>
+    <body>
+        <!--object will shown the user here where the canvas is-->
+        <canvas class="threejs"></canvas>
+
+         <!--importing main.js as a module-->
+         <script type="module" src="main.js">
+        </script>
+
+    </body>
+</html>
